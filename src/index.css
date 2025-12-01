@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-black text-white overflow-hidden;
+  font-family: 'Inter', sans-serif;
+}
