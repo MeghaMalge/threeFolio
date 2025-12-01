@@ -1,2 +1,106 @@
-# threeFolio
-A 3D journey through my work.
+# 🌌 threeFolio — A 3D Journey Through My Work
+
+**threeFolio** is my interactive 3D portfolio — a minimal orbit through my projects, experience, and design philosophy.  
+Built with **React Three Fiber**, **TailwindCSS**, and **Framer Motion**, it blends clean frontend engineering with creative 3D design.
+
+---
+
+## ✨ Preview
+
+🔗 [Live Demo](#) _(coming soon)_  
+🧠 Designed & Developed by [Megha Malge](https://www.linkedin.com/in/meghamalge)
+
+---
+
+## 🧩 Tech Stack
+
+| Layer | Tools / Libraries |
+|-------|--------------------|
+| **Framework** | [React](https://react.dev/) + [Vite](https://vitejs.dev/) |
+| **3D Engine** | [Three.js](https://threejs.org/) via [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) |
+| **3D Helpers** | [@react-three/drei](https://github.com/pmndrs/drei) |
+| **Animation** | [Framer Motion](https://www.framer.com/motion/) |
+| **Styling** | [TailwindCSS](https://tailwindcss.com/) |
+
+---
+
+## 🧱 Project Structure
+
+threeFolio/
+├── public/
+├── src/
+│ ├── assets/ # Textures, images, small models
+│ ├── components/ # Reusable components (3D + UI)
+│ │ ├── Scene.jsx
+│ │ ├── CameraController.jsx
+│ │ └── Overlay/
+│ ├── pages/ # Page-level scenes or overlays
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+├── package.json
+└── tailwind.config.js
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/threeFolio.git
+cd threeFolio
+```
+
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Run Locally
+```bash
+npm run dev
+```
+
+### 4️⃣ Build for Production
+```bash
+npm run build
+```
+
+---
+
+## 🎨 Theme Concept
+
+### 🪐 Minimal Orbit
+
+A sleek, monochrome 3D experience inspired by the concept of orbits — where each section of my portfolio represents a unique planet in my professional journey.
+
+The design blends **minimalism**, **motion**, and **depth**, creating an environment that feels both futuristic and focused on clarity.
+
+**Visual Highlights**
+- ⚫ Monochrome palette with soft glow accents (black, white, and cyan)
+- 🎥 Smooth camera transitions between sections
+- 💫 Floating geometric shapes and ambient lighting
+- 🧭 Overlay UI with glass or matte finish for clean readability
+
+**Sections**
+- **Home** — The entry orbit, introducing who I am and what I do  
+- **About** — My story, skills, and what drives my creativity  
+- **Experience** — A connected timeline of roles and learnings  
+- **Projects** — Interactive previews of featured works  
+- **Contact** — A calm, night-sky-inspired closing scene with a call to connect  
+
+---
+
+## 👩‍💻 Author
+
+**Megha Malge**  
+Frontend-Focused Full Stack Developer  
+📍 Bangalore, India  
+
+I build interactive, scalable, and beautiful web experiences — combining performance-driven engineering with creative front-end design.
+
+**Connect with me:**  
+- 💼 [LinkedIn](https://www.linkedin.com/in/meghamalge)  
+- 💻 [GitHub](https://github.com/meghamalge)  
+- ✉️ [meghamalge226@gmail.com](mailto:meghamalge226@gmail.com)
+
