@@ -26,20 +26,31 @@ Built with **React Three Fiber**, **TailwindCSS**, and **Framer Motion**, it ble
 
 ## 🧱 Project Structure
 
+The project is organized to keep **3D components**, **UI overlays**, and **pages** modular and easy to extend as the portfolio grows.
+
+```bash
 threeFolio/
-├── public/
+├── public/                         # Public assets and favicon
 ├── src/
-│ ├── assets/ # Textures, images, small models
-│ ├── components/ # Reusable components (3D + UI)
-│ │ ├── Scene.jsx
-│ │ ├── CameraController.jsx
-│ │ └── Overlay/
-│ ├── pages/ # Page-level scenes or overlays
-│ ├── App.jsx
-│ ├── index.css
-│ └── main.jsx
+│   ├── assets/                     # Textures, icons, small 3D models
+│   ├── components/                 # Core reusable components
+│   │   ├── Scene.jsx               # Main Three.js scene (3D world)
+│   │   ├── CameraController.jsx    # Camera movement logic / scroll controls
+│   │   └── Overlay/                # 2D UI overlays
+│   │       ├── Navbar.jsx          # Top navigation bar
+│   │       └── SectionCard.jsx     # Overlay cards for About, Projects, etc.
+│   ├── pages/                      # Individual sections of the site
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Projects.jsx
+│   │   └── Contact.jsx
+│   ├── App.jsx                     # Main app component
+│   ├── index.css                   # Global + Tailwind styles
+│   └── main.jsx                    # Entry point for React
 ├── package.json
-└── tailwind.config.js
+├── tailwind.config.js
+└── vite.config.js
 
 ---
 
