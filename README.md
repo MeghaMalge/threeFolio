@@ -51,6 +51,7 @@ threeFolio/
 ├── package.json
 ├── tailwind.config.js
 └── vite.config.js
+```
 
 ---
 
