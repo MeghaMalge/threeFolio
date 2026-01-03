@@ -28,8 +28,9 @@ export default function HomeOverlay() {
           </button>
 
           <a
-            href="/MalgeMegha.pdf"
+            href={`${import.meta.env.BASE_URL}MalgeMegha.pdf`}
             target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-3 bg-white text-black rounded-full hover:opacity-80 transition"
           >
             Resume

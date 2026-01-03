@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function ExperienceOverlay() {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-full md:border-t md:mt-[30vh] h-screen flex flex-col md:flex-row justify-center items-center md:items-start md:gap-10 gap-6 border-gray-600">
+      <div className="relative w-full md:border-t md:mt-[30vh] h-screen flex flex-col-reverse md:flex-row justify-center items-center md:items-start md:gap-10 gap-6 border-gray-600">
         {EXPERIENCE.map((item, index) => (
           <motion.div
             key={index}
