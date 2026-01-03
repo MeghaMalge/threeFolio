@@ -16,7 +16,7 @@ Built with **React Three Fiber**, **TailwindCSS**, and **Framer Motion**, it ble
 
 | Layer | Tools / Libraries |
 |-------|--------------------|
-| **Framework** | [React](https://react.dev/) + [Vite](https://vitejs.dev/) |
+| **Framework** | [React](https://react.dev/) |
 | **3D Engine** | [Three.js](https://threejs.org/) via [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) |
 | **3D Helpers** | [@react-three/drei](https://github.com/pmndrs/drei) |
 | **Animation** | [Framer Motion](https://www.framer.com/motion/) |
@@ -34,17 +34,16 @@ threeFolio/
 ├── src/
 │   ├── assets/                     # Textures, icons, small 3D models
 │   ├── components/                 # Core reusable components
-│   │   ├── Scene.jsx               # Main Three.js scene (3D world)
-│   │   ├── CameraController.jsx    # Camera movement logic / scroll controls
+│   │   ├── scenes/                 # Main Three.js scene (3D world)
+│   │   │   ├── HomeScene.jsx        
+│   │   │   └── ProjectsScene.jsx 
+│   │   ├── camera/                 # Camera movement logic / scroll controls
 │   │   └── Overlay/                # 2D UI overlays
 │   │       ├── Navbar.jsx          # Top navigation bar
-│   │       └── SectionCard.jsx     # Overlay cards for About, Projects, etc.
-│   ├── pages/                      # Individual sections of the site
-│   │   ├── Home.jsx
-│   │   ├── About.jsx
-│   │   ├── Experience.jsx
-│   │   ├── Projects.jsx
-│   │   └── Contact.jsx
+│   │       └── Overlay.jsx         # Overlay cards for Home, Projects, etc.
+│   ├── constants/                  
+│   ├── context/                  
+│   ├── data/                  
 │   ├── App.jsx                     # Main app component
 │   ├── index.css                   # Global + Tailwind styles
 │   └── main.jsx                    # Entry point for React
@@ -96,10 +95,8 @@ The design blends **minimalism**, **motion**, and **depth**, creating an environ
 
 **Sections**
 - **Home** — The entry orbit, introducing who I am and what I do  
-- **About** — My story, skills, and what drives my creativity  
 - **Experience** — A connected timeline of roles and learnings  
 - **Projects** — Interactive previews of featured works  
-- **Contact** — A calm, night-sky-inspired closing scene with a call to connect  
 
 ---
 
