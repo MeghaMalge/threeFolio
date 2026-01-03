@@ -4,18 +4,19 @@ export const EXPERIENCE = [
     title: "Frontend Developer",
     company: "Publicis Sapient",
     description: [
-      "Building scalable React architecture",
-      "Focusing on performance & UX polish",
+      "Built React SPAs with Redux and reusable component systems.",
+      "Developed e-commerce and blogging features with testing support.",
+      "Collaborated in Agile teams to ship production features.",
     ],
   },
   {
-    year: "July'23 - Current",
+    year: "July'23 - Present",
     title: "SDE-1",
     company: "Jar",
     description: [
-      "Developed production-ready PWA",
-      "Improved performance and load times",
-      "Worked on WebView optimizations",
+      "Led React & Next.js development for PWA and CMS-driven platforms.",
+      "Built secure auth flows and WebView experiences for mobile app.",
+      "Improved performance, SEO, and analytics tracking across products.",
     ],
   },
 ];

@@ -15,11 +15,11 @@ export default function ExperienceOverlay() {
               delay: index * 0.15,
               ease: "easeOut",
             }}
-            className="relative w-[400px] h-fit"
+            className="relative md:w-[400px] w-full h-fit px-4 md:px-0"
           >
             {/* Dot */}
             <motion.span
-              className="absolute md:block hidden z-10 left-[160px] -top-[10px] w-4 h-4 rounded-full bg-yellow-400"
+              className="absolute md:block hidden z-10 left-[190px] -top-[10px] w-4 h-4 rounded-full bg-yellow-400"
               animate={{ scale: [1, 1.3, 1] }}
               transition={{
                 duration: 2,
@@ -35,22 +35,16 @@ export default function ExperienceOverlay() {
             <motion.div
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="md:absolute mx-auto left-0 -top-5 w-fit p-6 md:pt-16 border bg-white/20 border-gray-600 rounded-2xl text-white"
+              className="md:absolute mx-auto left-0 -top-5 md:w-[400px] p-6 md:pt-16 border bg-white/20 border-gray-600 rounded-2xl text-white"
             >
-              <h3 className="text-lg font-semibold whitespace-nowrap">
-                {item.title}
-              </h3>
+              <h3 className="text-lg font-semibold">{item.title}</h3>
 
               <div className="flex justify-between">
-                <p className="text-gray-400 text-sm whitespace-nowrap">
-                  {item.company}
-                </p>
-                <p className="text-sm text-gray-400 whitespace-nowrap">
-                  {item.year}
-                </p>
+                <p className="text-gray-400 text-sm">{item.company}</p>
+                <p className="text-sm text-gray-400">{item.year}</p>
               </div>
 
-              <ul className="mt-2 list-disc list-inside text-gray-300 space-y-1 whitespace-nowrap">
+              <ul className="mt-2 list-disc list-inside text-gray-300 space-y-1 text-xs md:text-base">
                 {item.description.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
