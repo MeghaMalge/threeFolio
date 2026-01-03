@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber";
 
 export default function Particles({ color = "#00ffff" }) {
   const pointsRef = useRef();
-  const count = 1000; // Number of particles
+  const count = 1000;
   const positions = useMemo(() => {
     const positions = new Float32Array(count * 3);
     for (let i = 0; i < count; i++) {

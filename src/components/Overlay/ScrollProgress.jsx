@@ -1,8 +1,10 @@
+import { SECTIONS } from "../../constants/sections";
+
 export default function ScrollProgress({ currentSection, onSectionChange }) {
-  const sections = ["Home", "About", "Experience", "Projects", "Contact"];
+  const sections = Object.values(SECTIONS);
 
   return (
-    <div className="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col items-center gap-4 z-10">
+    <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-4 z-10">
       {sections.map((section) => {
         const isActive = currentSection === section;
         return (
